@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="ShopEase - A responsive e-commerce product catalog built as a web development capstone project.">
+
+    <meta name="author"
+          content="Pingaksh Arora">
+
+    <title>ShopEase | Modern E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         Header / Navigation
+    =========================================== -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+               class="logo"
+               aria-label="ShopEase Home">
+                ShopEase
+            </a>
+
+            <nav class="main-nav"
+                 aria-label="Main navigation">
+
+                <a href="index.html"
+                   class="nav-link active">
+                    Home
+                </a>
+
+                <a href="products.html"
+                   class="nav-link">
+                    Products
+                </a>
+
+                <a href="cart.html"
+                   class="nav-link cart-link">
+                    Cart
+                    <span id="cart-count"
+                          class="cart-count">
+                        0
+                    </span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         Main Content
+    =========================================== -->
+
+    <main>
+
+        <!-- Hero Section -->
+
+        <section class="hero-section">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        Modern Shopping Experience
+                    </p>
+
+                    <h1>
+                        Discover products
+                        you'll love.
+                    </h1>
+
+                    <p class="hero-description">
+                        Explore a carefully organized collection
+                        of modern products with a simple,
+                        responsive shopping experience.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="products.html"
+                           class="button primary">
+                            Explore Products
+                        </a>
+
+                        <a href="#features"
+                           class="button secondary">
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual"
+                     aria-hidden="true">
+
+                    <div class="hero-card">
+
+                        <span class="hero-card-icon">
+                            🛍️
+                        </span>
+
+                        <p>
+                            Quality products.
+                        </p>
+
+                        <strong>
+                            Simple shopping.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Categories -->
+
+        <section class="categories-section"
+                 aria-labelledby="categories-title">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Explore
+                    </p>
+
+                    <h2 id="categories-title">
+                        Shop by Category
+                    </h2>
+
+                    <p>
+                        Find products across popular categories.
+                    </p>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <a href="products.html?category=electronics"
+                       class="category-card">
+
+                        <span class="category-icon"
+                              aria-hidden="true">
+                            💻
+                        </span>
+
+                        <h3>
+                            Electronics
+                        </h3>
+
+                        <p>
+                            Smart devices and useful technology.
+                        </p>
+
+                    </a>
+
+
+                    <a href="products.html?category=fashion"
+                       class="category-card">
+
+                        <span class="category-icon"
+                              aria-hidden="true">
+                            👕
+                        </span>
+
+                        <h3>
+                            Fashion
+                        </h3>
+
+                        <p>
+                            Everyday clothing and accessories.
+                        </p>
+
+                    </a>
+
+
+                    <a href="products.html?category=home"
+                       class="category-card">
+
+                        <span class="category-icon"
+                              aria-hidden="true">
+                            🏠
+                        </span>
+
+                        <h3>
+                            Home
+                        </h3>
+
+                        <p>
+                            Products designed for modern living.
+                        </p>
+
+                    </a>
+
+
+                    <a href="products.html?category=fitness"
+                       class="category-card">
+
+                        <span class="category-icon"
+                              aria-hidden="true">
+                            🏋️
+                        </span>
+
+                        <h3>
+                            Fitness
+                        </h3>
+
+                        <p>
+                            Gear and essentials for active lifestyles.
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Products -->
+
+        <section class="featured-section"
+                 aria-labelledby="featured-title">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-row">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Featured
+                        </p>
+
+                        <h2 id="featured-title">
+                            Popular Products
+                        </h2>
+
+                    </div>
+
+                    <a href="products.html"
+                       class="text-link">
+                        View all products →
+                    </a>
+
+                </div>
+
+
+                <div id="featured-products"
+                     class="product-grid">
+
+                    <!-- Products will be generated by JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+
+        <section id="features"
+                 class="features-section"
+                 aria-labelledby="features-title">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        Why ShopEase
+                    </p>
+
+                    <h2 id="features-title">
+                        Built for a better experience
+                    </h2>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <span class="feature-icon"
+                              aria-hidden="true">
+                            ⚡
+                        </span>
+
+                        <h3>
+                            Fast Experience
+                        </h3>
+
+                        <p>
+                            Lightweight frontend architecture
+                            designed for a smooth browsing experience.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <span class="feature-icon"
+                              aria-hidden="true">
+                            📱
+                        </span>
+
+                        <h3>
+                            Responsive Design
+                        </h3>
+
+                        <p>
+                            A flexible interface that works across
+                            desktop, tablet and mobile screens.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <span class="feature-icon"
+                              aria-hidden="true">
+                            🛒
+                        </span>
+
+                        <h3>
+                            Easy Cart
+                        </h3>
+
+                        <p>
+                            Add products, update quantities and
+                            manage your shopping cart easily.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <span class="feature-icon"
+                              aria-hidden="true">
+                            🔒
+                        </span>
+
+                        <h3>
+                            Simple Architecture
+                        </h3>
+
+                        <p>
+                            Organized frontend code with reusable
+                            components and client-side state.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Call To Action -->
+
+        <section class="cta-section">
+
+            <div class="container cta-content">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Start Shopping
+                    </p>
+
+                    <h2>
+                        Find something useful today.
+                    </h2>
+
+                    <p>
+                        Browse the catalog and add your
+                        favorite products to the cart.
+                    </p>
+
+                </div>
+
+                <a href="products.html"
+                   class="button primary">
+                    Browse Catalog
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         Footer
+    =========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="index.html"
+                   class="logo">
+                    ShopEase
+                </a>
+
+                <p>
+                    A Web Development Capstone Project.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 ShopEase. Built by Pingaksh Arora.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
